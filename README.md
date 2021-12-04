@@ -2,4 +2,4 @@
 
 
 
-[click here to Web Application](https://priyanka-panaganti.github.io/UID-project-/landing%20page.html)
+[Click here to view Web Application](https://priyanka-panaganti.github.io/UID-project-/landing%20page.html)
