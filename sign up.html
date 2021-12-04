@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sign up</title>
+
+   
+    <style>
+        body{
+	margin:0;
+	color: rgba(255, 255, 255, 0.925);
+
+	font:600 16px/18px 'Open Sans',sans-serif;
+
+	background: url(https://d26tqmt1mjuqkn.cloudfront.net/_nuxt/img/bce2b82.jpg);
+
+	background-repeat: no-repeat;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+* {
+	box-sizing: border-box;
+}
+.header-icon{
+    float: left;
+    padding: 10px 12px;
+
+   
+}
+
+
+
+.css-typing p {
+	border-right: .15em solid orange;
+	margin-top: -42px;
+	margin-left: -160px;
+	white-space: nowrap;
+	overflow: hidden;
+  }
+  .css-typing p:nth-child(1) {
+	width: 15em;
+	-webkit-animation: type 2s steps(40, end);
+	animation: type 2s steps(40, end);
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+	width: 14em;
+	opacity: 0;
+	-webkit-animation: type 2s steps(40, end);
+	animation: type 2s steps(40, end);
+	animation: type2 2s steps(40, end);
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(3) {
+	width: 14em;
+	opacity: 0;
+	-webkit-animation: type 2s steps(40, end);
+	animation: type 2s steps(40, end);
+	animation: type2 2s steps(40, end);
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(4){
+	width: 13.8em;
+	opacity: 0;
+	-webkit-animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+	animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+	0% {
+	  width: 0;
+	}
+	99.9% {
+	  border-right: .15em solid orange;
+	}
+	100% {
+	  border: none;
+	}
+  }
+  
+  @-webkit-keyframes type {
+	0% {
+	  width: 0;
+	}
+	99.9% {
+	  border-right: .15em solid orange;
+	}
+	100% {
+	  border: none;
+	}
+  }
+  
+  @keyframes type2 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	99.9% {
+	  border-right: .15em solid orange;
+	}
+	100% {
+	  opacity: 1;
+	  border: none;
+	}
+  }
+  
+  @-webkit-keyframes type2 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	99.9% {
+	  border-right: .15em solid orange;
+	}
+	100% {
+	  opacity: 1;
+	  border: none;
+	}
+  }
+  
+  @keyframes type3 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @-webkit-keyframes type3 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes blink {
+	50% {
+	  border-color: transparent;
+	}
+  }
+  @-webkit-keyframes blink {
+	50% {
+	  border-color: tranparent;
+	}
+  }
+
+
+#message{
+	margin: auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: #6c74a1;
+	border-radius: 1200px;
+	
+	position:relative;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	 font-size: 45px;
+	  font-weight: normal; 
+	  line-height: 48px;
+	  width: 500px;
+	height: 350px;
+	right: 300px;
+	top: 200px;
+	text-emphasis-position: 20px;
+	box-sizing: border-box;
+}
+.login-wrap{
+	box-sizing: border-box;
+    width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:730px;
+	position:relative;
+    border-radius: 25px;
+         left: 400px;
+        margin-top: -340px;
+     box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    background-color: rgba(0,41,77,.5);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:white;
+	border-color:#1161ee;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+
+.login-form .group .button{
+	width:160px;
+	color:#fff;
+	display:block;
+	
+}
+
+.button{
+	
+	margin-left: 110px;
+}
+
+.login-form .group .input{
+    color: white;
+    width:100%;
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.24),0 2px 5px 0 rgba(0,0,0,.19);
+
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+   
+	background:rgba(255,255,255,.1);
+}
+
+.login-form .group .label{
+	color:white;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+
+}
+
+
+.login-form .group .button1{
+	background:#155edc;
+    border:none;
+	padding:15px 20px;
+	border-radius:25px;
+    color: white;
+   align-items: center;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:darkblue;
+}
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+
+}
+.foott-lnk{
+	text-align:center;
+	
+}
+    </style>
+</head>
+
+<body>
+    <div class="cobrand-logo-wrapper" >
+       
+    <div class="header-icon">
+        <img src="https://d26tqmt1mjuqkn.cloudfront.net/_nuxt/img/6bab654-160.png" loading="lazy" decoding="async" width="160" height="41" alt="HomeFinder">
+    </div>
+  
+</div>
+   
+
+    
+    <div id="message" class="css-typing">
+        <img src="main.png" loading="lazy" decoding="async" width="350" height="55" alt="HomeFinder">
+        <blockquote>
+        <p>
+            Owning a home is a keystone
+            <br></p>
+       <p>of wealth, both<br></p>
+       <p>financial affluence and<br></p>
+       <p>emotional security</p>
+       </blockquote>
+    </div>
+    <div class="login-wrap">
+    
+
+           
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+         
+                <div class="sign-in-htm">
+                <form  method="post" enctype="multipart/form-data">
+                    <div class="group">
+						<br>
+                        <label for="pass" class="label">Username</label>
+                        <input id="text" type="text" class="input" >
+                    </div>
+					<br>
+
+                    <div class="group">
+                        <label for="pass" class="label">Email Id</label>
+                        <input id="text" type="text" class="input"  >
+                    </div>
+                   <br>
+                      
+                      
+                        <div data-for="message" class="group">
+                        <label for="user" class="label">Password</label>
+                            <input name="password"  type="password" data-form-field="password" class="input" >
+                        </div>
+						<br>
+                        <div id="recaptcha-container" class="group" id = "center-allign" ></div>
+                        <div class="group" style="align-items:center" ><a href="Main_Page.html"><input type="button" class="button"  value="sign in"></a></div>
+                  
+                    <div class="hr"></div>
+                    <div class="foott-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                 </form>
+                </div>
+                <form action="insert.php" method="post">
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input"  name="username" required>
+                    </div>
+				
+                    <div class="group">
+                        <label for="pass" class="label">Aadhar Number</label>
+                        <input id="pass" type="password" class="input" name="aadhar" data-type="password" required>
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Mobile Number</label>
+                        <input id="number" type="tel" class="input" name="mobile"  data-type="password" required>
+                    </div>
+                   
+                    <div class="group">
+                        <label for="user" class="label">Father Name</label>
+                        <input id="user" type="text" class="input"  name="father" required>
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">Mother Name</label>
+                        <input id="user" type="text" class="input"  name="mother" required>
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Email Id</label>
+                        <input id="pass" type="text" class="input" name="email"  required>
+                    </div>
+
+                    <div class="group">
+                        <input type="radio" name="gender" value="male"> Male
+                              <input type="radio" name="gender" value="female"> Female
+                                   <input type="radio" name="gender" value="other"> Other
+                    </div>
+                   
+                    <div class="group">
+                      <a href="D:\3rd semister\user interface design(UID)\project\UID-project-\Main_Page.html" > <input type="button" class="button"  value="Sign Up"></a>
+                    </div>
+                     <div class="foott-lnk">
+                        <label for="tab-1">Already Member?</label>
+                              </div>
+                
+            </div>
+            </form>
+        </div>
+    </div>   
+     
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+    <script type="module">
+      
+      const firebaseConfig = {
+    apiKey: "AIzaSyDntgM1JxhFWzbUzq7rPT8j44nqUIFnQP8",
+    authDomain: "sample-18975.firebaseapp.com",
+    projectId: "sample-18975",
+    storageBucket: "sample-18975.appspot.com",
+    messagingSenderId: "332950120346",
+    appId: "1:332950120346:web:927eb05bfd0f4379677c23",
+    measurementId: "G-GF3XLN7TF3"
+  };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      
+      </script> 
+	
+  <script>
+      window.onload=function () {
+      render();
+      };
+       function render() {
+       window.recaptchaVerifier=new firebase.auth.RecaptchaVerifier('recaptcha-container');
+       recaptchaVerifier.render();
+}
+
+
+  </script>
+      
+
+
+</body>
+</html>
